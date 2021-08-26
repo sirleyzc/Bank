@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio de clave</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="container">
+            <br>
+            <nav class="navbar navbar-light bg-light">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/logo_sena.png" alt="" width="40" height="40"> BANCO SENA
+                    </a>
+                </div>
+            </nav>
+            <br>
+            <h4>Cambio de clave</h4>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="main.html">Inicio</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Retiro</li>
+                </ol>
+            </nav>
+            <br>
+            <hr>
+            <h6>Para cambiar la clave, ingresa los datos que se solicitan a continuación:</h6>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Clave actual</span>
+                <input type="text" class="form-control" placeholder="Ingrese la clave actual">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Nueva clave</span>
+                <input type="text" class="form-control" placeholder="Ingrese la nueva clave">
+                <input type="text" class="form-control" placeholder="Vuelva a ingresar la nueva clave para confirmar el procedimiento">
+            </div>
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-primary" type="button">Cambiar clave</button>
+            </div>
+            <br>
+            <div class="alert alert-success d-flex align-items-center" role="alert">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                </svg>
+                <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+                <div>
+                  El cambio de su contraseña ha sido exitoso
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+<script src="js/vue.js"></script>
+<script src="js/clave.js"></script>
+</html>

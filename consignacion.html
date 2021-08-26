@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consignación</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div id="app">
+        <div class="container">
+            <br>
+            <nav class="navbar navbar-light bg-light">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/logo_sena.png" alt="" width="40" height="40"> BANCO SENA
+                    </a>
+                </div>
+            </nav>
+            <br>
+            <h4>Consignación</h4>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="main.html">Inicio</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Consignación</li>
+                </ol>
+            </nav>
+            <br>
+            <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupSelect01">Tipo de cuenta</label>
+                <select class="form-select" id="inputGroupSelect01">
+                  <option selected>Selecciona el tipo cuenta a la que deseas consignar</option>
+                  <option value="1">Cuenta de ahorros</option>
+                  <option value="2">Cuenta corriente</option>
+                </select>
+              </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Número de cuenta</span>
+                <input type="text" class="form-control" placeholder="Ingrese el número de la cuenta a la cual desea consignar">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Valor a consignar</span>
+                <input type="text" class="form-control" placeholder="Ingrese el valor que desea consignar">
+            </div>
+            <br>
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-primary" type="button">Continuar</button>
+            </div>
+            <br>
+            <div class="alert alert-warning" role="alert">
+                <h4 class="alert-heading">Datos de la consignación</h4>
+                <h6>Tipo de cuenta destino:</h6>
+                <h6>Número de la cuenta destino:</h6>
+                <h6>Valor a consignar</h6>
+                <hr>
+                <p class="mb-0">Por favor verifique que los datos sean correctos. Si los datos son correctos pulse el boton Finalizar, de lo contrario Cancelar</p>
+            </div>
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-primary" type="button">Finalizar</button>
+                <button class="btn btn-primary" type="button">Cancelar</button>
+                <button class="btn btn-primary" type="button">Imprimir recibo</button>
+            </div>
+            <br>
+        </div>
+    </div>
+    
+</body>
+
+<script src="js/vue.js"></script>
+<script src="js/consignacion.js"></script>
+</html>
